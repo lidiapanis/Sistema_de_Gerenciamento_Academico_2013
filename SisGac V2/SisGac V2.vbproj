@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4842AD2-1B01-4ACB-9657-98601E7D538A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SisGac_V2.My.MyApplication</StartupObject>
+    <RootNamespace>SisGac_V2</RootNamespace>
+    <AssemblyName>SisGac V2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SisGac V2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SisGac V2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alunos.Designer.vb">
+      <DependentUpon>Alunos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alunos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biblioteca.Designer.vb">
+      <DependentUpon>Biblioteca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Biblioteca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClBanco.vb" />
+    <Compile Include="Cursos.Designer.vb">
+      <DependentUpon>Cursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios.Designer.vb">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Notas_Faltas_Consulta_aluno.Designer.vb">
+      <DependentUpon>Notas_Faltas_Consulta_aluno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notas_Faltas_Consulta_aluno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas_Faltas_Lançamento.Designer.vb">
+      <DependentUpon>Notas_Faltas_Lançamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notas_Faltas_Lançamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaFunc.Designer.vb">
+      <DependentUpon>PesquisaFunc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisaFunc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaProf.Designer.vb">
+      <DependentUpon>PesquisaProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisaProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisar Emprestimo Devolução.Designer.vb">
+      <DependentUpon>Pesquisar Emprestimo Devolução.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisar Emprestimo Devolução.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisar.Designer.vb">
+      <DependentUpon>Pesquisar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisarcurso.Designer.vb">
+      <DependentUpon>Pesquisarcurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisarcurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesquisarlivroemprestimo.Designer.vb">
+      <DependentUpon>pesquisarlivroemprestimo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisarlivroemprestimo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisarlivros.Designer.vb">
+      <DependentUpon>Pesquisarlivros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisarlivros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesquisarsolicitante.Designer.vb">
+      <DependentUpon>pesquisarsolicitante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisarsolicitante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professores.Designer.vb">
+      <DependentUpon>Professores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Professores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alunos.resx">
+      <DependentUpon>Alunos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biblioteca.resx">
+      <DependentUpon>Biblioteca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos.resx">
+      <DependentUpon>Cursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios.resx">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas_Faltas_Consulta_aluno.resx">
+      <DependentUpon>Notas_Faltas_Consulta_aluno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas_Faltas_Lançamento.resx">
+      <DependentUpon>Notas_Faltas_Lançamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaFunc.resx">
+      <DependentUpon>PesquisaFunc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaProf.resx">
+      <DependentUpon>PesquisaProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisar Emprestimo Devolução.resx">
+      <DependentUpon>Pesquisar Emprestimo Devolução.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisar.resx">
+      <DependentUpon>Pesquisar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisarcurso.resx">
+      <DependentUpon>Pesquisarcurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisarlivroemprestimo.resx">
+      <DependentUpon>pesquisarlivroemprestimo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisarlivros.resx">
+      <DependentUpon>Pesquisarlivros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesquisarsolicitante.resx">
+      <DependentUpon>pesquisarsolicitante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professores.resx">
+      <DependentUpon>Professores.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
